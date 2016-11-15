@@ -1,0 +1,126 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{palatino}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[colorlinks=true, urlcolor=blue, urlbordercolor={0 1 1}]{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage} \hspace{0.2cm}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\indent \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+\multirow{3}{*}{\huge\textsc{\textbf{Anshul Gupta}}}	& \textbf{Email:} \href{mailto:anshulgupta0803@gmail.com}{anshulgupta0803@gmail.com}				\\
+							& \textbf{Website:} \href{https://github.com/anshulgupta0803?tab=repositories}{github.com/anshulgupta0803}	\\
+							& \textbf{Phone:} +91 916 662 8880
+\end{tabular*}
+
+\resheading{\textbf{ACADEMIC DETAILS}}\\[\lsep]
+\\ \\
+\indent \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccc}
+\hline
+\textbf{Year}	&	\textbf{Degree / Certificate}			&	\textbf{University / School}	&	\textbf{CPI / \%}	\\
+\hline
+%\vspace{0.05in}
+2019 (expected)	&	M. Tech (Computer Science and Engineering)	&	IIT Bombay			&	--			\\[0.15cm]
+%\vspace{0.05in}
+2015		&	B. Tech (Computer Science and Engineering)	&	The LNM IIT, Jaipur		&	7.59 / 10		\\[0.15cm]
+%\vspace{0.05in}
+2011		&	Class XII (CBSE)				&	Maheshwari Public School, Jaipur&	82.00 \%		\\[0.15cm]
+%\vspace{0.05in}
+2009		&	Class X (CBSE)					&	Maheshwari Public School, Jaipur&	86.00 \%		\\
+\hline
+\end{tabular*}
+\\ \\
+\indent \resheading{\textbf{FIELDS OF INTEREST}}\\[\lsep]
+\begin{itemize}
+\item \noindent Aritifical Intelligence\\[-0.6cm]
+\item \noindent Distributed Computing\\[-0.6cm]
+\item \noindent Performance Benchmarking\\[-0.6cm]
+\end{itemize}
+ 
+\indent \resheading{\textbf{SUMMER INTERNSHIPS}}\\[\lsep]
+\\ \\
+\indent\small{\textbf{Ecole Normale Superieure de Lyon, France (INRIA)}}	\hfill	\small{\textit{(May'14 - Jul'14)}} \\
+\indent\small{\textbf{Analysis and Extrapolation of CPU Processing Rate of Simulation of Parallel Applications$^[$\footnote{\href{https://github.com/anshulgupta0803/scalatrace-ti}{https://github.com/anshulgupta0803/scalatrace-ti}}$^]$}}
+\\[-0.3cm]
+\begin{itemize}
+\item \noindent \small{Studied the behavior of combination of two tools Scalatrace and Simgrid for the offline performance analysis of MPI applications and developed original extrapolation method to improve the accuracy of the simulated results.}
+\\[-0.5cm]
+\item \noindent \small{Analyzed Time Independent traces acquired on Grid’5000 of NPB Benchmarks for different problem sizes to find a pattern for extrapolation of CPU rate.}
+\end{itemize}
+
+\indent \small{\textbf{Indraprastha Institute of Information Technology, Delhi}}	\hfill	\small{\textit{(May'13 - Jul'13)}} \\
+\indent \small{\textbf{Performance analysis and Optimization of Hadoop based cluster}}
+\\[-0.3cm]
+\begin{itemize}
+\item \noindent \small{Identify various parameters which affect the execution of a job on Hadoop Clusters and design a framework to execute the jobs on the given cluster.}
+\\[-0.5cm]
+\item \noindent \small{Configured Hadoop based cluster and optimized its performance by varying multiple configuration factors and schedulers and executed Map Reduce tasks on it to bring it to an optimal state.}
+\end{itemize}
+
+\indent \resheading{\textbf{MAJOR PROJECTS}}\\[\lsep]
+\\ \\
+% \resheading{\textbf{MAJOR PROJECTS AND SEMINAR} }\\[\lsep]
+% \begin{itemize}
+% \item \textbf{Media Access Control Controling
+% } (Research Project) \\
+%  \emph{(Guide:Prof. Hubert F.
+% , May'13 - till date)} \\[-0.6cm]
+% 	\begin{itemize}\itemsep \isep
+% 	\item Objective :Performance analysis of HTTP web browsing traffic.
+% .
+% 	\item Performance analysis will help in comparing different MAC protocols based on different network sce-
+% narios.
+% 
+% 	\item Studied various papers related to different MAC protocols and now working on improving simulations.
+% 
+% 	\end{itemize}
+% 
+% \item \textbf{Second Item.
+% } (M. Tech. Seminar) \\
+%  \emph{(Guide: Prof. John Doe
+% , Jan'14 - Aug'14)} \\[-0.6cm]
+% 	\begin{itemize}\itemsep \isep
+% 	\item First subitem.
+% 	\item Second subitem.
+% 	\end{itemize}
+% \end{itemize}
+% 
+% \resheading{\textbf{STRENGTHS} }\\[\lsep]
+% \begin{itemize}
+% \item \noindent Positive Attitude, Social Interaction, Hardworking.
+% \end{itemize}
+% 
+% \resheading{\textbf{INTEREST AND HOBBIES} }\\[\lsep]
+% \begin{itemize}
+% \item \noindent Solving Puzzles.
+% \item \noindent Playing Chess.
+% 
+% \end{itemize}
+
+\end{document}
+
