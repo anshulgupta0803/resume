@@ -1,6 +1,5 @@
 \documentclass[a4paper,10pt]{article}
-%-----------------------------------------------------------
-\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage[top=0.75in, bottom=0.75in, left=0.50in, right=0.75in]{geometry}
 \usepackage{palatino}
 \usepackage{tabularx}
 \usepackage{multirow}
@@ -15,10 +14,7 @@
 \raggedbottom
 
 \setlength{\tabcolsep}{0in}
-\newcommand{\isep}{-2 pt}
 \newcommand{\lsep}{-0.5cm}
-\newcommand{\psep}{-0.6cm}
-\renewcommand{\labelitemii}{$\circ$}
 
 \pagestyle{empty}
 %-----------------------------------------------------------
@@ -44,38 +40,31 @@
 \hline
 \textbf{Year}	&	\textbf{Degree / Certificate}			&	\textbf{University / School}	&	\textbf{CPI / \%}	\\
 \hline
-%\vspace{0.05in}
 2019 (expected)	&	M. Tech (Computer Science and Engineering)	&	IIT Bombay			&	--			\\[0.15cm]
-%\vspace{0.05in}
 2015		&	B. Tech (Computer Science and Engineering)	&	The LNM IIT, Jaipur		&	7.59 / 10		\\[0.15cm]
-%\vspace{0.05in}
 2011		&	Class XII (CBSE)				&	Maheshwari Public School, Jaipur&	82.00 \%		\\[0.15cm]
-%\vspace{0.05in}
 2009		&	Class X (CBSE)					&	Maheshwari Public School, Jaipur&	86.00 \%		\\
 \hline
 \end{tabular*}
 \\ \\
 \indent \resheading{\textbf{FIELDS OF INTEREST}}\\[\lsep]
-\begin{itemize}
-\item \noindent Aritifical Intelligence\\[-0.6cm]
-\item \noindent Distributed Computing\\[-0.6cm]
-\item \noindent Performance Benchmarking\\[-0.6cm]
-\end{itemize}
- 
+\\ \\
+\indent \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lll}
+  Artificial Intelligence & Distributed Computing & Performance Benchmarking\\
+\end{tabular*}
+\\
 \indent \resheading{\textbf{SUMMER INTERNSHIPS}}\\[\lsep]
 \\ \\
-\indent\small{\textbf{Ecole Normale Superieure de Lyon, France (INRIA)}}	\hfill	\small{\textit{(May'14 - Jul'14)}} \\
+\indent\small{\textbf{\'Ecole Normale Sup\'erieure de Lyon, France (INRIA)}}	\hfill	\small{\textit{(May'14 - Jul'14)}} \\
 \indent\small{\textbf{Analysis and Extrapolation of CPU Processing Rate of Simulation of Parallel Applications$^[$\footnote{\href{https://github.com/anshulgupta0803/scalatrace-ti}{https://github.com/anshulgupta0803/scalatrace-ti}}$^]$}}
-\\[-0.3cm]
 \begin{itemize}
-\item \noindent \small{Studied the behavior of combination of two tools Scalatrace and Simgrid for the offline performance analysis of MPI applications and developed original extrapolation method to improve the accuracy of the simulated results.}
+\item \noindent \small{Studied the behavior of combination of two tools Scalatrace and Simgrid for the off-line performance analysis of MPI applications and developed original extrapolation method to improve the accuracy of the simulated results.}
 \\[-0.5cm]
 \item \noindent \small{Analyzed Time Independent traces acquired on Grid’5000 of NPB Benchmarks for different problem sizes to find a pattern for extrapolation of CPU rate.}
 \end{itemize}
 
 \indent \small{\textbf{Indraprastha Institute of Information Technology, Delhi}}	\hfill	\small{\textit{(May'13 - Jul'13)}} \\
 \indent \small{\textbf{Performance analysis and Optimization of Hadoop based cluster}}
-\\[-0.3cm]
 \begin{itemize}
 \item \noindent \small{Identify various parameters which affect the execution of a job on Hadoop Clusters and design a framework to execute the jobs on the given cluster.}
 \\[-0.5cm]
@@ -84,43 +73,76 @@
 
 \indent \resheading{\textbf{MAJOR PROJECTS}}\\[\lsep]
 \\ \\
-% \resheading{\textbf{MAJOR PROJECTS AND SEMINAR} }\\[\lsep]
-% \begin{itemize}
-% \item \textbf{Media Access Control Controling
-% } (Research Project) \\
-%  \emph{(Guide:Prof. Hubert F.
-% , May'13 - till date)} \\[-0.6cm]
-% 	\begin{itemize}\itemsep \isep
-% 	\item Objective :Performance analysis of HTTP web browsing traffic.
-% .
-% 	\item Performance analysis will help in comparing different MAC protocols based on different network sce-
-% narios.
-% 
-% 	\item Studied various papers related to different MAC protocols and now working on improving simulations.
-% 
-% 	\end{itemize}
-% 
-% \item \textbf{Second Item.
-% } (M. Tech. Seminar) \\
-%  \emph{(Guide: Prof. John Doe
-% , Jan'14 - Aug'14)} \\[-0.6cm]
-% 	\begin{itemize}\itemsep \isep
-% 	\item First subitem.
-% 	\item Second subitem.
-% 	\end{itemize}
-% \end{itemize}
-% 
-% \resheading{\textbf{STRENGTHS} }\\[\lsep]
-% \begin{itemize}
-% \item \noindent Positive Attitude, Social Interaction, Hardworking.
-% \end{itemize}
-% 
-% \resheading{\textbf{INTEREST AND HOBBIES} }\\[\lsep]
-% \begin{itemize}
-% \item \noindent Solving Puzzles.
-% \item \noindent Playing Chess.
-% 
-% \end{itemize}
+\indent\small{\textbf{Resource Provisioning of LXD Containers$^[$\footnote{\href{https://github.com/anshulgupta0803/ContainerProvisioning}{https://github.com/anshulgupta0803/ContainerProvisioning}}$^]$}}	\hfill	\small{\textit{(Oct'16 - Nov'16)}}
+\begin{itemize}
+ \item We tried to address the problem memory provisioning in containers using LXD API for containers.
+ \item Our implementation tries to do a vertical scaling for alleviating memory hotspots. Our algorithm periodically monitors all the containers in a cluster and keeps provisioning memory to the overloaded containers in real-time.
+\end{itemize}
+
+\indent\small{\textbf{Intelligent Reversi playing bot$^[$\footnote{\href{https://github.com/anshulgupta0803/reversi}{https://github.com/anshulgupta0803/reversi}}$^]$}}	\hfill	\small{\textit{(Oct'16 - Nov'16)}}
+\begin{itemize}
+ \item We tried to make an intelligent bot to play Reversi against a player (random or intelligent).
+ \item The intelligence comes through Minimax search algorithm using Alpha-Beta pruning for optimization.
+\end{itemize}
+
+\indent\small{\textbf{Performance Analysis and Optimization of Individualized CPU - GPU core systems $^[$\footnote{\href{https://github.com/anshulgupta0803/Benchmarking-CPU-GPU}{https://github.com/anshulgupta0803/Benchmarking-CPU-GPU}}$^]$}}	\hfill	\small{\textit{(Mar'13 - Apr'13)}}
+\begin{itemize}
+ \item Examined the CPU v/s GPU core structure and focused on how to compare the performance of both for different types of workloads and analyzed the performance.
+ \item Compared the execution of algorithms on Intel Xeon E5630 (2.53 GHz) and NVidia Tesla C2050 (1 TFLOP) GPU analyzing their performance and speed up over time.
+\end{itemize}
+
+\indent\small{\textbf{LNMIIT Gymkhana Workflow Management$^[$\footnote{\href{https://github.com/anshulgupta0803/GymkhanaWorkflow}{https://github.com/anshulgupta0803/GymkhanaWorkflow}}$^]$}}	\hfill	\small{\textit{(Mar'14 - Apr'14)}}
+\begin{itemize}
+ \item Automated the application workflow through various departments of LNMIIT Gymkhana using MVC model in JSP.
+ \item Workflow management through various departments and hierarchy of command which leads to reduction in the paperwork and physical work.
+\end{itemize}
+
+\indent\small{\textbf{Airline Scheduling Problem using Maxflow Algorithm$^[$\footnote{\href{https://github.com/anshulgupta0803/Maxflow-Algorithm}{https://github.com/anshulgupta0803/Maxflow-Algorithm}}$^]$}}	\hfill	\small{\textit{(Oct'13 - Nov'13)}}
+\begin{itemize}
+ \item  Interpreted real world problem regarding Airline Scheduling solved using Maxflow Concept from the field of graph theory (Ford Fulkerson Algorithm).
+ \item Designed an application in JAVA which gives the schedule of flights as an output for a given set of inputs of number of flights and time.
+\end{itemize}
+
+\indent \resheading{\textbf{PUBLICATIONS}}\\[\lsep]
+\\
+\begin{itemize}
+ \item Published ``\textbf{AutoPerf: Automated Load Testing and Resource Usage Profiling of Multi-Tier Internet Applications}'' published in ``8th ACM/SPEC International Conference on Performance Engineering (ICPE 2017)''.
+ \item Published ``\textbf{Toward More Scalable Off-Line Simulations of MPI Applications}'' in ``World Scientific Parallel Processing Letters Volume 25 Issue 03''.
+ \item Published ``\textbf{A Framework for Performance Analysis and Tuning in Hadoop Based Clusters}'', in ``Workshop on Smarter Planet and Big Data Analytics (SPBDA 2014)'' held in conjunction with ``15$^{th}$ ICDCN 2014, Coimbatore''.
+\end{itemize}
+
+\resheading{\textbf{POSITIONS OF RESPONSIBILITY}}\\[\lsep]
+\\ \\
+\indent\small{\textbf{Sub - Coordinator (Networking) of Computer Club (LNMIIT)}}	\hfill	\small{\textit{(Aug'12 - May'13)}}
+\begin{itemize}
+ \item Headed a 5-strong team as a part of 3-tier system responsible for organization of classes on networking students.
+ \item Conducted nation-wide online ethical hacking event (Prison Break) that saw a participation of 300 people.
+\end{itemize}
+
+\indent\small{\textbf{Sub - Coordinator (Networking) of Computer Club (LNMIIT)}}	\hfill	\small{\textit{(Aug'13 - May'14)}}
+\begin{itemize}
+ \item Organized a 3 week long winter workshop by Netcamp.
+\end{itemize}
+
+\indent\small{\textbf{Teachers’ Assistant for Operating Systems}}			\hfill	\small{\textit{(Jan'14 - May'14)}}
+\begin{itemize}
+ \item Guided a group of 75 students in a 6-strong team.
+\end{itemize}
+
+\resheading{\textbf{IMPORTANT COURSES UNDERTAKEN}}\\[\lsep]
+\\ \\
+\indent \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lll}
+Artificial Intelligence		&	Virtualization and Cloud	&	Data Mining \\
+Digital Image Processing	&	Linear Algebra			&	Database Management Systems
+\end{tabular*}
+
+\resheading{\textbf{EXTRA CURRICULAR ACHIEVEMENTS}}\\[\lsep]
+\\
+\begin{itemize}
+ \item 2$^{nd}$ in Ethical Hacking Contest of BITS-GOA.
+ \item 2$^{nd}$ in Roborace Competition in The LNM IIT.
+ \item Placed 3$^{rd}$ out of 40 students in Nettech Winter Camp.
+ \item Managed entire website and levels of Ethical Hacking Event of XLRI - Jamshedpur (Unlock Your Sherlock) that saw a participation of over 600 people.
+\end{itemize}
 
 \end{document}
-
