@@ -111,9 +111,10 @@
 \end{itemize}
 
 \cvsection{M.Tech. Dissertation}
-\cvevent{}{Scalability, Reliability, and Security of BodhiTree}{Jul '18 --- Present}{}{}
+\cvevent{}{Scalability, Reliability, and Security of BodhiTree}{Jul '18 --- Jun '19}{}{}
 \begin{itemize}
 	\item \textbf{OBJECTIVE} --- Supporting no more than 250 students combined with the security bugs, BodhiTree needs to be revamped, so that theoretically, its performance can increase linearly with linear increase in resources
+	\item \textbf{Focus}: Docker, Load-Balancing
 	%\item BodhiTree - an initiative for e-learning by IIT Bombay mimics a classroom setting, providing flexibility for students to study at their own pace
 %	\item Expected outcome from this project is a scalable LMS which can be distributed (as an application container) and deployed with ease
 \end{itemize}
@@ -129,17 +130,9 @@
 %\clearpage
 
 \cvsection{Projects}
-\cvproject{ASSR: Automatic Stuttered Speech Recognition\hspace{0.3em}\href{https://github.com/anshulgupta0803/ASSR}{\faGithub}}{Autumn '17}
-\begin{itemize}
-	\item \textbf{OBJECTIVE} --- Enabling people having a stuttering speech impediment to use the current state-of-the-art speech-to-text systems
-	\item \textbf{Focus}: Python, Audio Processing
-%	\item UCLASS database was used for training and testing the ANN. IBM Watson's Speech-to-text system was used for validation of the corrected audio
-%	\item Stuttered audio is segmented with the duration on 300ms and an overlap of 200ms which allowed the model to detect stutter at a granularity of 100ms
-\end{itemize}
-
 %\divider
 
-\cvproject{Face Recognition using Faster R-CNN\hspace{0.3em}\href{https://github.com/anshulgupta0803/Face-Recognition-using-Faster-R-CNN}{\faGithub}}{Spring '17}
+\cvproject{Face Detection using Faster R-CNN\hspace{0.3em}\href{https://github.com/anshulgupta0803/Face-Recognition-using-Faster-R-CNN}{\faGithub\hspace{0.3em}\faExternalLink}}{}%{Spring '17}
 \begin{itemize}
 	\item \textbf{OBJECTIVE} --- Draw bounding box on all the faces in an image
 	\item \textbf{Focus}: Python, Image Processing
@@ -149,9 +142,19 @@
 
 %\divider
 
-\cvproject{Machine Learning approach for Music Genre Classification\hspace{0.3em}\href{https://github.com/anshulgupta0803/music-genre-classification}{\faGithub}}{Spring '16}
+\cvproject{ASSR: Automatic Stuttered Speech Recognition\hspace{0.3em}\href{https://github.com/anshulgupta0803/ASSR}{\faGithub\hspace{0.3em}\faExternalLink}}{}%{Autumn '17}
 \begin{itemize}
-	\item Used neural nets and decision trees to classify music into different categories: Rock, Hip Hop, Jazz, etc.
+	\item \textbf{OBJECTIVE} --- Enable people having a stuttering speech impediment to use the current state-of-the-art speech-to-text systems
+	\item \textbf{Focus}: Python, Audio Processing
+%	\item UCLASS database was used for training and testing the ANN. IBM Watson's Speech-to-text system was used for validation of the corrected audio
+%	\item Stuttered audio is segmented with the duration on 300ms and an overlap of 200ms which allowed the model to detect stutter at a granularity of 100ms
+\end{itemize}
+
+%\divider
+
+\cvproject{Machine Learning approach for Music Genre Classification\hspace{0.3em}\href{https://github.com/anshulgupta0803/music-genre-classification}{\faGithub\hspace{0.3em}\faExternalLink}}{}%{Spring '16}
+\begin{itemize}
+	\item \textbf{OBJECTIVE} --- Classify music into different categories: Rock, Hip Hop, Jazz, Blues, etc.
 	\item \textbf{Focus}: Python, Audio Processing
 %	\item Feature set included Spectral Centroid, Spectral Rolloff, Time-domain Zero Crossing, MFCC coefficients, RMS Energy, and Spectral Contrast
 %	\item Achieved an accuracy of 63.5\% using Random Forest. Tried a different approach of using CNN on the spectrogram of audio files. Accuracy was 23\%
@@ -159,27 +162,28 @@
 
 %\divider
 
-%\cvproject{Intelligent Reversi playing bot}{Autumn '16}
-%\begin{itemize}
-%	\item \textbf{OBJECTIVE} --- Build an intelligent agent to play Reversi
-%%	\item Intelligence comes through Minimax algorithm with alpha-beta pruning
-%%	\item The heuristic was a combination of parity, mobility, corners, and occupancy which determines the best possible next move
-%\end{itemize}
-%
-%\divider
-
-\cvproject{Solving Sudoku using Boolean SAT Solver in Haskell\hspace{0.3em}\href{https://github.com/anshulgupta0803/SAT-Solver}{\faGithub}}{Autumn '17}
-%\cvevent{}{Solving Sudoku using Boolean SAT Solver in Haskell}{Autumn '17}{}{\faGit\hspace{0.5em}\href{https://github.com/anshulgupta0803/SAT-Solver}{\faExternalLink}}
+\cvproject{Intelligent Reversi playing bot\hspace{0.3em}\href{https://github.com/anshulgupta0803/reversi}{\faGithub\hspace{0.3em}\faExternalLink}}{}%{Autumn '16}
 \begin{itemize}
-	\item \textbf{OBJECTIVE} --- Build a SAT Solver and use it to solve Sudoku
-	\item \textbf{Focus}: Functional Programming
-%	\item Implemented brute force and Davis-Putnam-Logemann-Loveland (DPLL) algorithms in Haskell%. DPLL reduces all the clauses in CNF as it progresses
-%	\item Transformed Sudoku in 11,907 binary and 243 nine-ary CNF clauses which were fed to the SAT solver
+	\item \textbf{OBJECTIVE} --- Build an intelligent agent to play Reversi
+	\item \textbf{Focus}: Minimax Algorithm, Alpha-Beta Pruning
+%	\item Intelligence comes through Minimax algorithm with alpha-beta pruning
+%	\item The heuristic was a combination of parity, mobility, corners, and occupancy which determines the best possible next move
 \end{itemize}
 
 %\divider
 
-\cvproject{Resource Provisioning of LXD Containers\hspace{0.3em}\href{https://github.com/anshulgupta0803/ContainerProvisioning}{\faGithub}}{Autumn '16}
+%\cvproject{Solving Sudoku using Boolean SAT Solver in Haskell\hspace{0.3em}\href{https://github.com/anshulgupta0803/SAT-Solver}{\faGithub\hspace{0.3em}\faExternalLink}}{}%{Autumn '17}
+%\cvevent{}{Solving Sudoku using Boolean SAT Solver in Haskell}{Autumn '17}{}{\faGit\hspace{0.5em}\href{https://github.com/anshulgupta0803/SAT-Solver}{\faExternalLink}}
+%\begin{itemize}
+%	\item \textbf{OBJECTIVE} --- Build a SAT Solver and use it to solve Sudoku
+%	\item \textbf{Focus}: Functional Programming
+%	\item Implemented brute force and Davis-Putnam-Logemann-Loveland (DPLL) algorithms in Haskell%. DPLL reduces all the clauses in CNF as it progresses
+%	\item Transformed Sudoku in 11,907 binary and 243 nine-ary CNF clauses which were fed to the SAT solver
+%\end{itemize}
+
+%\divider
+
+\cvproject{Resource Provisioning of LXD Containers\hspace{0.3em}\href{https://github.com/anshulgupta0803/ContainerProvisioning}{\faGithub\hspace{0.3em}\faExternalLink}}{}%{Autumn '16}
 \begin{itemize}
 	\item \textbf{OBJECTIVE} --- Prevent memory SLA violations in LXD based containers
 	\item \textbf{Focus}: Python, LXD Containers, Auto-Scaling
