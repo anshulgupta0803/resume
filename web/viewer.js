@@ -4414,7 +4414,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   sidebarViewOnLoad: {
-    value: 0,
+    value: 1,
     kind: OptionKind.VIEWER
   },
   scrollModeOnLoad: {
@@ -11824,7 +11824,7 @@ function getDefaultPreferences() {
     defaultPreferences = Promise.resolve({
       "showPreviousViewOnLoad": true,
       "defaultZoomValue": "",
-      "sidebarViewOnLoad": 0,
+      "sidebarViewOnLoad": 1,
       "cursorToolOnLoad": 0,
       "enableWebGL": false,
       "eventBusDispatchToDOM": false,
